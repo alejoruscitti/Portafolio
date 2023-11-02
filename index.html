@@ -15,24 +15,50 @@
         <header>
             <nav >
                 <ul class="manejo">
-                   <a href="">Sobre mi</a>
-                   <a href="">Mis proyectos</a>
-                   <a href="">Formulario</a>
+                   <a href="#sobreMi">Sobre mi</a>
+                   <a href="#misProyectos">Mis proyectos</a>
+                   <a href="#formulario">Formulario</a>
                 </ul>
             </nav>
         </header>
         <main>
             <h1 class="animate__animated animate__flipInY">Alejo Martin Ruscitti</h1>
             <p>
-                holaa Lorem ipsum dolor sit amet consectetur  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta quis culpa tempora, repellendus inventore libero soluta hic corporis voluptatum temporibus, error dolor nisi itaque qui atque facere minus beatae.adipisicing elit. Est itaque, assumenda voluptate quod maiores voluptates voluptatem, alias ducimus earum nihil aut eaque ipsa corrupti unde illo officia. Alias, molestias neque.
+                Bienvenidos soy Alejo Martin Ruscitti, tengo 20 años y quiero ser programodor Front-end.Hice cursos en <a href="https://www.coderhouse.com/?pipe_source=google&pipe_medium=cpc&pipe_campaign=0&gclid=CjwKCAjwrranBhAEEiwAzbhNtTM8tsrpdSpvpFYYeBzC6za5y3djBtyM9hJXy_496rev5_CA6iArbRoCTg8QAvD_BwE" class="coderhouse"><em>Coderhouse</em></a> como  Desarrlo web y Javascript. 
             </p>
+            <section id="misProyectos">
+                <h2>Proyectos</h2>
+                <div class="card">
+                    <div class="card-image"><img src="img/venus.jpg" alt="imagen sobre una paginan web de uñas"></div>
+                    <div class="card-content">
+                        <p class="card-description">Pagina web de uñas</p>
+                        <button class="boton"><a href="https://venusnailsstudio.netlify.app">Ver Portafolio</a></button>
+                    </div>
+                </div>
+            </section>
+            
         </main>
         <footer>
+            <section id="formulario">
+                <h2>Formulario</h2>
+                <form action="/my-handling-form-page" class="formulario" method="post">
+                    <div class="contenido">
+                        <label for="name">Nombre/Empresa:</label>
+                        <input type="text" id="name" name="user_name" placeholder="Juan/Mercado Libre"/>
+                        <label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="user_mail" placeholder="Portafolio@gmail.com" />
+                        <label for="msg">Mensaje:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                        <button>Enviar</button>
+                    </div>
+                </form>
+            </section>
             <div class="icons">
                 <a href="https://wa.me/5492216202050"><i class="fa-brands fa-whatsapp fa-beat fa-2xl"></i></a>
                 <a href="https://github.com/alejoruscitti"><i class="fa-brands fa-github fa-beat-fade fa-2xl"></i></a>
                 <a href="https://www.linkedin.com/in/alejo-mart%C3%ADn-ruscitti-731b33238/"><i class="fa-brands fa-linkedin fa-beat-fade fa-2xl"></i></a>
-                <a href=""><i class="fa-solid fa-envelope fa-beat-fade fa-2xl"></i></a>
+                <a href="mailto: alejoruscitti@gmail.com"><i class="fa-solid fa-envelope fa-beat-fade fa-2xl"></i></a>
+                <a href="pdf/Curriculum vitae.pdf"><i class="fa-solid fa-file-pdf fa-beat-fade fa-2xl"></i></a>
             </div>
         </footer>
     </div>

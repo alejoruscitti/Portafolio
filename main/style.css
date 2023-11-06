@@ -6,6 +6,14 @@
     font-family: 'PT Serif', serif; 
     font-size: 20px;
 }
+body{
+    background: rgb(26,26,133);
+    background: linear-gradient(237deg, rgba(26,26,133,1) 0%, rgba(43,23,159,1) 41%, rgba(43,23,158,1) 82%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 .layout{
     display: grid;
     grid-template-areas:
@@ -14,14 +22,6 @@
         "footer";
     grid-template-columns: 100%;
     grid-template-rows: auto;
-}
-body{
-    background: rgb(26,26,133);
-    background: linear-gradient(237deg, rgba(26,26,133,1) 0%, rgba(43,23,159,1) 41%, rgba(43,23,158,1) 82%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
 }
 header{
     grid-area: header;
@@ -89,44 +89,23 @@ section{
     overflow: hidden;
     width: 500px;
 }
-
-.card-image {
+.cardImagen {
     width: 100%;
     height: 100px;
 }
-
-.card-content {
+.cardContenido {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 35px;
 }
-
-.card-title {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.card-description {
-    font-size: 20px;
-}
-
-.card-link {
-    display: block;
-    text-decoration: none;
-    background-color: #fff;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
 .boton{
     display: inline-block;
     justify-content: center;
     padding: 0.4rem;
 }
-/* Css Formulario*/
+/*Formulario*/
 .formulario{
     display: flex;
     justify-content: center;
@@ -167,4 +146,41 @@ button{
 }
 button:hover {
     background-color: rgb(55, 26, 223);
+}
+@media only screen and (max-width: 875px){
+    body{
+        display: grid;
+        align-items: center;
+        width: 100%;
+        margin: 50px;
+    }
+    .manejo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .card{
+        width: 76%;
+    
+    }
+    button{
+        width: 10rem;
+    }
+    .formulario{
+        width: 400px;
+    }
 }
